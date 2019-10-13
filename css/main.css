@@ -1,0 +1,25 @@
+@import url("animations.css");
+@import url("fonts.css");
+@import url("theme.css");
+@import url("pages.css");
+
+:root {
+    --anaglyph-size: 2px;
+    --header-font-size: 6.6vw;
+    --header-line-height: 82%;
+    --header-font-weight: 500;
+    --header-font-family: 'Mitr';
+    /* --header-font-family: 'Open Sans'; */
+    /* --header-font-family: 'Sansita'; */
+    /* --header-font-family: 'Prompt'; */
+    /* --header-font-family: 'Libre Baskerville'; */
+    /* --header-font-family: 'IBM Plex Sans'; */
+    /* --header-font-family: 'Hind'; */
+    /* --header-font-family: 'A font with serifs'; */
+    /* --header-font-family: 'Catalogue'; */
+    /* --header-font-family: 'JMH typewriter sans'; */
+    /* --header-font-family: 'Fira Code'; */
+    /* --header-font-family: 'Monoid'; */
+    /* --header-font-family: 'Dosis';  */
+
+}

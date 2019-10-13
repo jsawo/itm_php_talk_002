@@ -16,19 +16,17 @@ blend modes:
   mix-blend-mode: color;
   mix-blend-mode: luminosity;
 */
-
 .wall {
   width: 100%;
   height: 100%;
   background-color: black;
-  /* background-image: url(img/dust/dust3.jpg); */
+  /* background-image: url(../img/dust/dust3.jpg); */
   /* background-size: cover; */
   background-position-x: 10%;
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  display: flex;
 }
 
 .wall > .overlay {
@@ -41,24 +39,24 @@ blend modes:
 }
 
 .overlay.wall-pre-1 {
-  background-image: url(img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  background-image: url(../img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
   mix-blend-mode: lighten;
   filter: blur(2px) opacity(5%);
 }
 
 .overlay.wall-post-1 {
-  background-image: url(img/dust/scratches-texture-1.jpg);
+  background-image: url(../img/dust/scratches-texture-1.jpg);
   mix-blend-mode: lighten;
   filter: blur(8px) opacity(10%);
 }
 
 .overlay.wall-post-2 {
-  background-image: url(img/dust/film-texture-2.jpg);
+  background-image: url(../img/dust/film-texture-2.jpg);
   mix-blend-mode: screen;
   filter: blur(25px) opacity(6%);
 }
 
-.page > .overlay {
+.page_wrapper > .overlay {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -68,28 +66,40 @@ blend modes:
 }
 
 .overlay.page-pre-1 {
-  background-image: url(img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  background-image: url(../img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
   filter: opacity(5%);
 }
 .overlay.page-pre-2 {
-  background-image: linear-gradient(to bottom right, white, black);
-  filter: opacity(10%);
+  background-image: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);;
+  filter: opacity(5%);
   mix-blend-mode: lighten;
 }
 
 .page {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  /* animation-name: bounce;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; */
+}
+
+.page_wrapper {
   margin: 50px;
   color: white;
   /* border: solid 1px red; */
   mix-blend-mode: lighten;
-  background-image: url(img/dust/dust3.jpg);
+  background-image: url(../img/dust/dust3.jpg);
   background-size: cover;
   position: relative;
   flex-grow: 1;
-
-  /* animation-name: bounce; */
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
 }
 
+.hidden {
+  visibility: hidden;
+}
