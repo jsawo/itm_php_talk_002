@@ -3,7 +3,6 @@
 .title_container {
     width: 80vw;
     margin: auto;
-    /* border: solid 1px orangered; */
 }
 
 .title_container h1 {
@@ -13,9 +12,9 @@
     font-weight: var(--header-font-weight, 500);
     line-height: var(--header-line-height, 82%);
     font-size: var(--header-font-size, 6.8vw);
-
-    /* text-shadow: -1px 0px 0 red, +1px 0px 0 cyan; */
-    text-shadow: calc(var(--anaglyph-size, 1px) * -1) 0px 1px red, calc(var(--anaglyph-size, 1px)) 0px 1px cyan;
+    text-shadow: 
+        calc(var(--anaglyph-size, 1px) * -1) 0px 1px rgba(255,0,0,.9), 
+        calc(var(--anaglyph-size, 1px)) 0px 1px rgba(0,255,255,.9);
 }
 
 .page.off{

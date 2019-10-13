@@ -10,6 +10,11 @@ const options = {
 hideSlides(slides);
 
 
+// setting css properties
+// document.documentElement.style.setProperty('--theme-darkness', val);
+
+
+// ----------------------------
 
 function goToPreviousSlide() {
     console.log('prev');
