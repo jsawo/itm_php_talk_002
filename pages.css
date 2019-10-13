@@ -1,0 +1,45 @@
+.page {
+    position: relative;
+}
+
+.title_container {
+    width: 80vw;
+    margin: auto;
+    /* border: solid 1px orangered; */
+}
+
+.title_container h1 {
+    color: white;
+    /* font-family: 'Open Sans'; */
+    /* font-family: 'Sansita'; */
+    /* font-family: 'Prompt'; */
+    font-family: 'Mitr';
+    /* font-family: 'Libre Baskerville'; */
+    /* font-family: 'IBM Plex Sans'; */
+    /* font-family: 'Hind'; */
+    /* font-family: 'A font with serifs'; */
+    /* font-family: 'Catalogue'; */
+    /* font-family: 'JMH typewriter sans'; */
+    /* font-family: 'Fira Code'; */
+    /* font-family: 'Monoid'; */
+    /* font-family: 'Dosis';  */
+
+  font-weight: 500;
+  line-height: 82%;
+  font-size: 6.8vw;
+}
+
+.title_container h1 .undelined {
+    text-decoration: underline;
+}
+
+#page_01 .title .line2 {
+    position: relative;
+    left: 2.7vw;
+}
+
+#page_01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+}

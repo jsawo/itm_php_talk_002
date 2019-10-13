@@ -1,0 +1,4 @@
+@keyframes bounce {
+  0% { top: -100px; }
+  100% { top: 380px; }
+}

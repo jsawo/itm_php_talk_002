@@ -1,0 +1,95 @@
+/* 
+blend modes:
+  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
+  mix-blend-mode: overlay;
+  mix-blend-mode: darken;
+  mix-blend-mode: lighten;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: hard-light;
+  mix-blend-mode: soft-light;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: hue;
+  mix-blend-mode: saturation;
+  mix-blend-mode: color;
+  mix-blend-mode: luminosity;
+*/
+
+.wall {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* background-image: url(img/dust/dust3.jpg); */
+  /* background-size: cover; */
+  background-position-x: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.wall > .overlay {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay.wall-pre-1 {
+  background-image: url(img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  mix-blend-mode: lighten;
+  filter: blur(2px) opacity(5%);
+}
+
+.overlay.wall-post-1 {
+  background-image: url(img/dust/scratches-texture-1.jpg);
+  mix-blend-mode: lighten;
+  filter: blur(8px) opacity(10%);
+}
+
+.overlay.wall-post-2 {
+  background-image: url(img/dust/film-texture-2.jpg);
+  mix-blend-mode: screen;
+  filter: blur(25px) opacity(6%);
+}
+
+.page > .overlay {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.overlay.page-pre-1 {
+  background-image: url(img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  filter: opacity(5%);
+}
+.overlay.page-pre-2 {
+  background-image: linear-gradient(to bottom right, white, black);
+  filter: opacity(10%);
+  mix-blend-mode: lighten;
+}
+
+.page {
+  margin: 50px;
+  color: white;
+  /* border: solid 1px red; */
+  mix-blend-mode: lighten;
+  background-image: url(img/dust/dust3.jpg);
+  background-size: cover;
+  position: relative;
+  flex-grow: 1;
+
+  /* animation-name: bounce; */
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
