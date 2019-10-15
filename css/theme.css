@@ -82,6 +82,8 @@ blend modes:
   left: 0;
   width: 100vw;
   height: 100vh;
+  mix-blend-mode: lighten;
+
 
   /* animation-name: bounce;
   animation-direction: alternate;
@@ -152,6 +154,10 @@ blend modes:
     width: 25vw;
     height: 15vw;
     clip-path: polygon(0% 0%, 33.76% 0%, 47.89% 31.06%, 51.48% 42.12%, 52.14% 52.61%, 50.44% 59.26%, 46.79% 64.95%, 42.68% 70.13%, 37.14% 70.97%, 32.27% 66.16%, 23.03% 44.1%, 18.46% 33.9%);
+}
+
+.hand {
+  /* position: relative; */
 }
 
 .hand_01 .finger_01 {
