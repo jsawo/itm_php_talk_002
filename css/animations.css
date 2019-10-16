@@ -1,0 +1,99 @@
+.page {
+  animation-duration: var(--animation-speed, 4s);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.out_1 { animation-name: out_1; }
+@keyframes out_1 {
+  0% { top: 0vh; }
+  10% { top: 0vh; }
+  100% { top: -90vh; }
+}
+
+.out_2 { animation-name: out_2; }
+@keyframes out_2 {
+  0% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  10% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  30% { transform: translate(2vh,-15vh) rotate(-15deg) scale(1, 1); }
+  95% { transform: translate(10vh,-100vh) rotate(-18deg) scale(1, 1); }
+  100% { transform: translate(0vh,-200vh) rotate(-18deg) scale(2, 2); }
+}
+
+.out_3 { animation-name: out_3; }
+@keyframes out_3 {
+  0% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  10% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  50% { transform: translate(-2vh,-15vh) rotate(3deg) scale(1, 1); }
+  90% { transform: translate(-10vh,-80vh) rotate(4deg) scale(1, 1); }
+  100% { transform: translate(-15vh,-100vh) rotate(10deg) scale(1, 1); }
+}
+
+.out_4 { animation-name: out_4; }
+@keyframes out_4 {
+  0% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  10% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  50% { transform: translate(30vh,-8vh) rotate(-3deg) scale(1, 1); }
+  90% { transform: translate(80vh,-30vh) rotate(-4deg) scale(1, 1); }
+  100% { transform: translate(100vh,-100vh) rotate(-10deg) scale(1, 1); }
+}
+
+.out_5 { animation-name: out_5; }
+@keyframes out_5 {
+  0% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  10% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+  50% { transform: translate(-30vh,-20vh) rotate(3deg) scale(1, 1); }
+  90% { transform: translate(-50vh,-70vh) rotate(4deg) scale(1, 1); }
+  100% { transform: translate(-100vh,-100vh) rotate(10deg) scale(1, 1); }
+}
+
+.in_1 { animation-name: in_1; animation-fill-mode: forwards;}
+@keyframes in_1 {
+  0% { top: -100vh; transform: rotate(0deg); }
+  100% { top: 0vh; transform: rotate(var(--slide-rotation, 0deg)); }
+}
+
+/* .in_2 { animation-name: in_2 , blurin_A ; } */
+.in_2 { animation-name: in_2; }
+@keyframes in_2 {
+  0% { transform: translate(-20vh,-100vh) rotate(-8deg) scale(1.7, 1.7); }
+  40% { transform: translate(-10vh,-15vh) rotate(-7deg) scale(1, 1); }
+  95% { transform: translate(0.1vh,0.3vh) rotate(0.5deg) scale(1, 1); }
+  100% { transform: translate(0vh,0vh) rotate(0.6deg) scale(1, 1); }
+}
+
+.in_3 { animation-name: in_3; }
+@keyframes in_3 {
+  0% { transform: translate(-80vh,-100vh) rotate(-8deg) scale(5, 5); }
+  30% { transform: translate(-20vh,-40vh) rotate(-7deg) scale(1, 1); }
+  95% { transform: translate(0.1vh,0.3vh) rotate(0.5deg) scale(1, 1); }
+  100% { transform: translate(0vh,0vh) rotate(0.6deg) scale(1, 1); }
+}
+
+.in_4 { animation-name: in_4; }
+@keyframes in_4 {
+  0% { transform: translate(-80vh,-100vh) rotate(-8deg) scale(1, 1); }
+  30% { transform: translate(-20vh,-40vh) rotate(-7deg) scale(1, 1); }
+  95% { transform: translate(0.1vh,0.3vh) rotate(1deg) scale(1, 1); }
+  100% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+}
+
+.in_5 { animation-name: in_5; }
+@keyframes in_5 {
+  0% { transform: translate(80vh,-100vh) rotate(8deg) scale(1, 1); }
+  30% { transform: translate(20vh,-40vh) rotate(7deg) scale(1, 1); }
+  95% { transform: translate(0.1vh,0.3vh) rotate(-1deg) scale(1, 1); }
+  100% { transform: translate(0vh,0vh) rotate(0deg) scale(1, 1); }
+}
+
+@keyframes blurin_A {
+  0% { filter: blur(50px) opacity(10%); }
+  40% { filter: blur(0px) opacity(100%); }
+  100% { filter: blur(0px) opacity(100%); }
+}
+
+.move-in { animation-name: move-in; animation-duration: 0.3s; animation-timing-function: ease-in-out; }
+@keyframes move-in {
+  0% { top: -30vh; }
+  60% { top: 0vh; }
+}

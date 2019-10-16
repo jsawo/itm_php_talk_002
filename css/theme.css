@@ -1,0 +1,209 @@
+/* 
+blend modes:
+  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
+  mix-blend-mode: overlay;
+  mix-blend-mode: darken;
+  mix-blend-mode: lighten;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: hard-light;
+  mix-blend-mode: soft-light;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: hue;
+  mix-blend-mode: saturation;
+  mix-blend-mode: color;
+  mix-blend-mode: luminosity;
+*/
+
+body {
+  background-color: black;
+  font-size: 2.2vw;
+  font-family: var(--primary-font-family, 'arial');
+}
+
+.wall {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* background-image: url(../img/dust/dust3.jpg); */
+  /* background-size: cover; */
+  background-position-x: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.wall > .overlay {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay.wall-pre-1 {
+  background-image: url(../img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  mix-blend-mode: lighten;
+  filter: blur(2px) opacity(calc(5% * var(--contrast, 1)));
+}
+
+.overlay.wall-post-1 {
+  background-image: url(../img/dust/scratches-texture-1.jpg);
+  mix-blend-mode: lighten;
+  filter: blur(8px) opacity(calc(10% * var(--contrast, 1)));
+}
+
+.overlay.wall-post-2 {
+  background-image: url(../img/dust/film-texture-2.jpg);
+  mix-blend-mode: screen;
+  filter: blur(25px) opacity(calc(6% * var(--contrast, 1)));
+}
+
+.page_wrapper > .overlay {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.overlay.page-pre-1 {
+  background-image: url(../img/dust/dust-texture-8-by-PhotoshopSupply.jpg);
+  filter: opacity(calc(5% * var(--contrast, 1)));
+}
+.overlay.page-pre-2 {
+  background-image: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);;
+  filter: opacity(calc(5% * var(--contrast, 1)));
+  mix-blend-mode: lighten;
+}
+
+.variant_1 .overlay.page-pre-2 {
+  background-image: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_2 .overlay.page-pre-2 {
+  background-image: linear-gradient(95deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_3 .overlay.page-pre-2 {
+  background-image: linear-gradient(185deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_4 .overlay.page-pre-2 {
+  background-image: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_5 .overlay.page-pre-2 {
+  background-image: linear-gradient(200deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_6 .overlay.page-pre-2 {
+  background-image: linear-gradient(5deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_7 .overlay.page-pre-2 {
+  background-image: linear-gradient(35deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+}
+.variant_8 .overlay.page-pre-2 {
+  background-image: linear-gradient(35deg, rgba(255,255,255,.5) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+.variant_9 .overlay.page-pre-2 {
+  background-image: linear-gradient(5deg, rgba(255,255,255,.8) 0%,rgba(255,255,255,.6) 100%);
+}
+
+.page {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: lighten;
+}
+
+.page_wrapper {
+  margin: 50px;
+  color: white;
+  mix-blend-mode: lighten;
+  background-image: url(../img/dust/dust3.jpg);
+  background-size: cover;
+  position: relative;
+  flex-grow: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.title_container {
+  width: 80vw;
+  margin: auto;
+}
+
+.title_container h1 {
+  color: var(--color-off-white, white);
+  font-family: var(--header-font-family, 'Mitr');
+
+  font-weight: var(--header-font-weight, 500);
+  line-height: var(--header-line-height, 82%);
+  font-size: var(--header-font-size, 6.8vw);
+  text-shadow: 
+      calc(var(--anaglyph-size, 1px) * -1) 0px 1px rgba(255,0,0,.7), 
+      calc(var(--anaglyph-size, 1px)) 0px 1px rgba(0,255,255,.7);
+}
+
+.page.content_in_the_middle .page_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.page.off{
+  top: -100vh;
+}
+
+.title_container h1 .undelined {
+  text-decoration: underline;
+}
+
+.finger {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.finger.finger_01 {
+  width: 25vw;
+  height: 15vw;
+  clip-path: polygon(0% 0%, 27% 0%, 34.36% 16.29%, 37.26% 27.35%, 38.15% 37.83%, 35.98% 45.65%, 32.34% 48.23%, 27.52% 48.36%, 23.61% 45.31%, 19.45% 40.12%, 15.8% 33.6%, 12.16% 25.35%);
+}
+
+.finger.finger_02 {
+  width: 25vw;
+  height: 15vw;
+  clip-path: polygon(0% 0%, 33.76% 0%, 47.89% 31.06%, 51.48% 42.12%, 52.14% 52.61%, 50.44% 59.26%, 46.79% 64.95%, 42.68% 70.13%, 37.14% 70.97%, 32.27% 66.16%, 23.03% 44.1%, 18.46% 33.9%);
+}
+
+.hand {
+  position: absolute;
+}
+
+.hand_01 .finger_01 {
+  left: 10vw;
+  top: -4vw;
+}
+
+.hand_01 .finger_02 {
+  left: 0vw;
+  top: -2vw;
+  transform: rotate(10deg);
+}
+
+.hand.right-hand {
+  right: 20vw;
+  transform: translateY(-15vh) rotate(45deg);
+}

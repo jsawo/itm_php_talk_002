@@ -1,0 +1,243 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ A font with serifs ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'A font with serifs'; src: url('../fonts/A_font_with_serifs/A_Font_with_Serifs.ttf') format('truetype');}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Catalogue ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Catalogue'; src: url('../fonts/Catalogue/Catalogue\ 2.0.ttf') format('truetype');}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Dosis ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Dosis'; src: url('../fonts/Dosis/Dosis-VariableFont:wght.ttf') format('truetype');}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Fira Code ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Fira Code'; src: url('../fonts/FiraCode/variable_ttf/FiraCode-VF.ttf') format('truetype');}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Hind ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Hind'; src: url('../fonts/Hind/Hind-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+@font-face { font-family: 'Hind'; src: url('../fonts/Hind/Hind-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Hind'; src: url('../fonts/Hind/Hind-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal;
+}
+@font-face { font-family: 'Hind'; src: url('../fonts/Hind/Hind-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+@font-face { font-family: 'Hind'; src: url('../fonts/Hind/Hind-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ IBM Plex Sans ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Thin.ttf') format('truetype');
+    font-weight: 100; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-LightItalic.ttf') format('truetype');
+    font-weight: 300; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; font-style: italic;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+@font-face { font-family: 'IBM Plex Sans'; src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700; font-style: italic;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ JMH typewriter sans ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'JMH typewriter sans'; src: url('../fonts/Jmh_typewriter_sans/JMH\ Typewriter\ Sans.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'JMH typewriter sans'; src: url('../fonts/Jmh_typewriter_sans/JMH\ Typewriter\ Sans\ Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'JMH typewriter sans'; src: url('../fonts/Jmh_typewriter_sans/JMH\ Typewriter\ Sans\ Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+@font-face { font-family: 'JMH typewriter sans'; src: url('../fonts/Jmh_typewriter_sans/JMH\ Typewriter\ Sans\ Bold-Italic.ttf') format('truetype');
+    font-weight: 700; font-style: italic;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Libre Baskerville ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'Libre Baskerville'; src: url('../fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Mitr ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-ExtraLight.ttf') format('truetype');
+    font-weight: 200; font-style: normal;
+}
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal;
+}
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+@font-face { font-family: 'Mitr'; src: url('../fonts/Mitr/Mitr-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Monoid ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Monoid'; src: url('../fonts/Monoid/Monoid-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Monoid'; src: url('../fonts/Monoid/Monoid-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'Monoid'; src: url('../fonts/Monoid/Monoid-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Open Sans ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: 300; font-style: italic;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; font-style: italic;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700; font-style: italic;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800; font-style: normal;
+}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800; font-style: italic;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Prompt ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Thin.ttf') format('truetype');
+    font-weight: 100; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-ThinItalic.ttf') format('truetype');
+    font-weight: 100; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-ExtraLight.ttf') format('truetype');
+    font-weight: 200; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-LightItalic.ttf') format('truetype');
+    font-weight: 300; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Medium.ttf') format('truetype');
+    font-weight: 500; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-MediumItalic.ttf') format('truetype');
+    font-weight: 500; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-BoldItalic.ttf') format('truetype');
+    font-weight: 700; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-ExtraBold.ttf') format('truetype');
+    font-weight: 800; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800; font-style: italic;
+}
+@font-face { font-family: 'Prompt'; src: url('../fonts/Prompt/Prompt-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Prompt/Prompt-BlackItalic.ttf') format('truetype');
+    font-weight: 900; font-style: italic;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Sansita ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-Regular.ttf') format('truetype');
+    font-weight: 400; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-Italic.ttf') format('truetype');
+    font-weight: 400; font-style: italic;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-Bold.ttf') format('truetype');
+    font-weight: 700; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-BoldItalic.ttf') format('truetype');
+    font-weight: 700; font-style: italic;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-ExtraBold.ttf') format('truetype');
+    font-weight: 800; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800; font-style: italic;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-Black.ttf') format('truetype');
+    font-weight: 900; font-style: normal;
+}
+@font-face { font-family: 'Sansita'; src: url('../fonts/Sansita/Sansita-BlackItalic.ttf') format('truetype');
+    font-weight: 900; font-style: italic;
+}
+
