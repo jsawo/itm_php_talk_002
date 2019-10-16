@@ -221,6 +221,18 @@ body {
   transform: translateY(-15vh) rotate(45deg);
 }
 
+.split {
+  display:flex; 
+  flex-direction: row;
+}
+.split ul, .split>div {
+  flex-grow: 1;
+  padding: 0;
+  font-size: 2vw;
+  line-height: 110%;
+  list-style-type: none;
+  text-align: center;
+}
 
 .threedots {
   margin: 0;

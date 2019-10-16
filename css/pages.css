@@ -38,3 +38,7 @@
     list-style-type: none;
     text-align: center;
 }
+
+#tink_doc .split p {
+    text-align: left;
+}
