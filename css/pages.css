@@ -1,4 +1,39 @@
-/* #page_01 .title .line2 {
+#hof_title .title .line2 {
     position: relative;
-    left: 2.7vw;
-} */
+    left: -2.3vw;
+}
+
+#hof_definition .clipping {
+    clip-path: polygon(86.31% 72.24%, 56.63% 74.47%, 56.47% 92.41%, 53.56% 92.11%, 27.14% 92.65%, 8.59% 91.07%, 1.15% 90.46%, 1.12% 69.55%, 0.09% 67.53%, 0.32% 46.9%, 2.42% 46.49%, 2.26% 30.96%, 0.97% 30.21%, 1.06% 9.32%, 90.56% 9.03%, 90.51% 29.84%, 89.1% 30.54%, 89.03% 33.4%, 91.34% 34.03%, 91.45% 51.19%, 86.68% 51.78%)
+}
+
+#hof_php_examples ul {
+    font-size: 4vw;
+    line-height: 120%;
+    list-style-type: square;
+}
+
+#hof_laravel_examples_title .line2 {
+    position: relative;
+    left: -1.4vw;
+}
+
+#hof_laravel_examples h1 {
+    margin-bottom: 1vh;
+}
+#hof_laravel_examples .split {
+    display:flex; 
+    flex-direction: row;
+}
+#hof_laravel_examples ul {
+    flex-grow: 1;
+    padding: 0;
+    font-size: 2vw;
+    line-height: 110%;
+    list-style-type: none;
+    text-align: center;
+}
+
+#tink_doc .split p {
+    text-align: left;
+}

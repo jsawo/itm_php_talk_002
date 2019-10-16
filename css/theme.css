@@ -27,8 +27,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
-  /* background-image: url(../img/dust/dust3.jpg); */
-  /* background-size: cover; */
   background-position-x: 10%;
   position: absolute;
   top: 0;
@@ -122,7 +120,7 @@ body {
 
 .page_wrapper {
   margin: 50px;
-  color: white;
+  color: var(--color-off-white, white);
   mix-blend-mode: lighten;
   background-image: url(../img/dust/dust3.jpg);
   background-size: cover;
@@ -149,6 +147,21 @@ body {
   text-shadow: 
       calc(var(--anaglyph-size, 1px) * -1) 0px 1px rgba(255,0,0,.7), 
       calc(var(--anaglyph-size, 1px)) 0px 1px rgba(0,255,255,.7);
+}
+
+.generic_container {
+  margin: auto;
+}
+
+.code_container {
+  /* width: 80vw; */
+  margin: auto;
+  border:solid 3px white;
+  padding: 1vw 5vw;
+}
+
+.code_container pre {
+  font-family: 'Fira Code';
 }
 
 .page.content_in_the_middle .page_wrapper {
@@ -206,4 +219,31 @@ body {
 .hand.right-hand {
   right: 20vw;
   transform: translateY(-15vh) rotate(45deg);
+}
+
+.split {
+  display:flex; 
+  flex-direction: row;
+}
+.split ul, .split>div {
+  flex-grow: 1;
+  padding: 0;
+  font-size: 2vw;
+  line-height: 110%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.threedots {
+  margin: 0;
+  font-size: 4vw;
+  line-height: 0%;
+  text-align: center;
+}
+
+.clipping {
+  font-family: 'JMH typewriter sans';
+  color: #050505; 
+  background: var(--color-off-white, white);
+  padding: 5vh;
 }
