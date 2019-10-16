@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Stylesheet" href="css/main.css" />
-    <title>PREZ 2</title>
+    <title>PHP talk 02</title>
 </head>
 <body>
     <div class="wall">
         <div class="overlay wall-pre-1"></div>
-
-
 
 
         <div class="page content_in_the_middle" id="intro_01"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
@@ -23,6 +21,212 @@
             <p style="position: absolute; right: 5vh; bottom: 0; font-family: var(--secondary-font-family, 'Catalogue'); color: var(--color-off-white, rgb(253, 248, 240))">2019.10.17</p>
 
         </div></div>
+
+
+
+
+        <!-- 
+            #########################################################################
+                HIGHER ORDER FUNCTIONS
+         -->
+
+
+        <div class="page content_in_the_middle" id="hof_intro"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered" style="font-size: 11vw;">HOF</h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_title"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered">Higher-order <br /><span class="line2">functions</span></h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_definition"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <p class="clipping" style="font-size: 127%; width: 70%; transform: rotate(-2deg); margin: auto auto;">
+                <strong>Funkcja wyższego rzędu</strong> (higher-order function) 
+                <br /> to funkcja, która przyjmuje jako przynajmniej 
+                <br /> jeden z parametrów inną funkcję, albo zwraca 
+                <br /> funkcję (albo jedno i drugie)
+            </p>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered">Przykłady <br /> w PHP</h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_php_examples"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <ul>
+                        <li>usort</li>
+                        <li>array_filter</li>
+                        <li>array_map</li>
+                        <li>array_walk</li>
+                    </ul>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_code_example"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="code_container" >
+                    <pre>
+$highOrderFunc = function($callback, $value) {
+    return $callback($value) * 2;
+};
+
+$addFive = function($value) {
+    return $value + 5;
+};
+
+<strong>$result = $highOrderFunc($addFive, 10);</strong>
+                    </pre>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_laravel_examples_title"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered">Przykłady <br /><span class="line2">w Laravelu</span></h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_laravel_examples"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Operacje na kolekcjach</h1>
+                    <div class="split">
+                        <ul>
+                            <li>contains</li>
+                            <li>countBy</li>
+                            <li>each</li>
+                            <li>eachSpread</li>
+                            <li>every</li>
+                            <li>filter</li>
+                            <li>first</li>
+                            <li>flatMap</li>
+                            <li>get</li>
+                            <li>groupBy</li>
+                            <li>keyBy</li>
+                            <li>map</li>
+                        </ul>
+                        <ul>
+                            <li>partition</li>
+                            <li>pipe</li>
+                            <li>reduce</li>
+                            <li>reject</li>
+                            <li>search</li>
+                            <li>sortBy</li>
+                            <li>tap</li>
+                            <li>times</li>
+                            <li>transform</li>
+                            <li>unique</li>
+                            <li>unless</li>
+                            <li>when</li>
+                        </ul>
+                    </div>
+                    <p class="threedots">...</p>
+    
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_laravel_examples_title"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered">Higher-order <br /><span class="line2">messages</span></h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_code_example2"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="code_container" >
+                    <pre>
+Account::all()
+->reject(function($account) {
+    return $account->inactive;
+})->each(function($account) {
+    $account->sendReminder();
+})
+
+<strong>Account::all()
+    ->reject->inactive
+    ->each->sendReminder();</strong>
+                    </pre>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="hof_laravel_examples"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Higher-order messages</h1>
+                    <div class="split">
+                        <ul>
+                            <li>average</li>
+                            <li>avg</li>
+                            <li>contains</li>
+                            <li>each</li>
+                            <li>every</li>
+                            <li>filter</li>
+                            <li>first</li>
+                            <li>flatMap</li>
+                            <li>groupBy</li>
+                            <li>keyBy</li>
+                        </ul>
+                        <ul>
+                            <li>map</li>
+                            <li>max</li>
+                            <li>min</li>
+                            <li>partition</li>
+                            <li>reject</li>
+                            <li>some</li>
+                            <li>sortBy</li>
+                            <li>sortByDesc</li>
+                            <li>sum</li>
+                            <li>unique</li>
+                        </ul>
+                    </div>
+    
+                </div>
+
+        </div></div>
+
+
+
+
+
+
+        <!-- 
+            #########################################################################
+                TINKER
+         -->
+        <div class="page content_in_the_middle"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="title_container">
+                <h1 class="title text-centered">~~~</h1>
+            </div>
+
+        </div></div>
+
+
+
+
 
         <div class="page content_in_the_middle" id="tinker_01"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
 
@@ -60,7 +264,7 @@
         
                 <div class="title_container">
                     <h2 class="">globalny plik konfiguracyjny</h2>
-                    <p>wtf / wtf -a</p>
+                    <p>aaaaa</p>
                 </div>
 
         </div></div>
@@ -189,18 +393,24 @@
         
         </div></div>
         
-        <div class="page content_in_the_middle" id="page_02"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
 
-            <p class="clipping"
-                style="font-family: 'JMH typewriter sans'; font-size: 127%; width: 70%; color: #050505; background: white; padding: 5vh; transform: rotate(-3deg);
-                clip-path: polygon(83.41% 77.51%, 39.3% 74.93%, 39.17% 89.92%, 1.11% 89.26%, 1.19% 72.96%, 3% 73.32%, 3.15% 50.48%, 1.74% 8.4%, 91.87% 10.87%, 91.76% 28.69%, 88.8% 29.93%, 88.33% 42.23%, 92.22% 42.85%, 92.58% 60.37%, 84.68% 58.84%);">
-                <span style="font-weight: 700; text-shadow: #4f4d4d -1px 0px 1px;">Funkcja wyższego rzędu</span> (higher-order function) 
-                <br /> to funkcja, która przyjmuje jako przynajmniej 
-                <br /> jeden z parametrów inną funkcję, albo zwraca 
-                <br /> funkcję (albo jedno i drugie)
-            </p>
+
+
+
+        <!-- 
+            #########################################################################
+                VARIABLE FONTS
+         -->
+         <div class="page content_in_the_middle"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="title_container">
+                <h1 class="title text-centered">~~~</h1>
+            </div>
 
         </div></div>
+
+
+
 
         <div class="page content_in_the_middle" id="fonts_01"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
 
@@ -209,6 +419,29 @@
             </div>
 
         </div></div>
+
+
+
+
+
+
+        <!-- 
+            #########################################################################
+                VARIABLE FONTS
+         -->
+         <div class="page content_in_the_middle"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="title_container">
+                <h1 class="title text-centered">~~~</h1>
+            </div>
+
+        </div></div>
+
+
+        
+
+
+
 
         <div class="page content_in_the_middle" id="page_05"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
 
@@ -227,9 +460,9 @@
 
 
 
-
-        <div class="overlay wall-post-1"></div>
-        <div class="overlay wall-post-2"></div>
+        <!-- TODO - odkomentować !!!!!!!!!!!!!!!!!!!!  -->
+        <!-- <div class="overlay wall-post-1"></div>  -->
+        <!-- <div class="overlay wall-post-2"></div> -->
 
         <div class="hands hidden">
             <div class="hand hand_01">
