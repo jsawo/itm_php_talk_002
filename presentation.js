@@ -10,7 +10,7 @@ const options = {
     wrapSlides: false,
     useAnimations: true,
     animations: {
-        animationSpeed: '4s',
+        animationSpeed: '1s',
         randomise: true,
         in: ['in_1', 'in_2'],
         out: ['out_1', 'out_2'],
