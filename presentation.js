@@ -3,70 +3,102 @@ const slideCount = slides.length;
 const startingSlideIndex = getCurrentSlideIndex();
 let currentSlideIndex = startingSlideIndex;
 
-let hands = document.getElementsByClassName("hand");
+let hands = document.getElementsByClassName('hand');
+const wall = document.getElementsByClassName('wall')[0];
 
 const options = {
     startWithFirstSlideShown: true,
     wrapSlides: false,
     useAnimations: true,
+    tweaks: {
+        contrast: 3,
+        anaglyphSize: '2px',
+        variants: ['variant_1', 'variant_2', 'variant_3', 'variant_4', 'variant_5', 'variant_6', 'variant_7', 'variant_8', 'variant_9'],
+    },
     animations: {
         animationSpeed: '1s',
         randomise: true,
-        in: ['in_1', 'in_2'],
-        out: ['out_1', 'out_2'],
-        fixedIn: 'in_1',
-        fixedOut: 'out_2',
+        in: ['in_1', 'in_2', 'in_3', 'in_4', 'in_5'],
+        out: ['out_1', 'out_2', 'out_3', 'out_4', 'out_5'],
+        rightHand: ['out_2', 'out_3', 'out_4'],
+        fixedIn: 'in_5',
+        fixedOut: 'out_1',
         action: 'out_2'
     }
 }
 
 hideSlides(slides);
 document.documentElement.style.setProperty('--animation-speed', options.animations.animationSpeed);
+document.documentElement.style.setProperty('--anaglyph-size', options.tweaks.anaglyphSize);
+document.documentElement.style.setProperty('--contrast', options.tweaks.contrast);
 
 // ----------------------------
 
-function goToPreviousSlide() {
+function goToPreviousSlide(skipAnimations) {
     if (currentSlideIndex > 0 || options.wrapSlides) {
-        hideSlide(slides[currentSlideIndex]);
+        hideSlide(slides[currentSlideIndex], skipAnimations);
         decrementCurrentSlideIndex();
-        // tweakCurrentSlide(); // TODO
-        showSlide(slides[currentSlideIndex]);
+        tweakSlide(slides[currentSlideIndex]);
+        window.setTimeout(function () {
+            showSlide(slides[currentSlideIndex], skipAnimations);
+        }, (options.useAnimations && !skipAnimations) ? getRandomInt(1,500) : 0);
         updateFragment();
     }
 }
 
-function goToNextSlide() {
+function goToNextSlide(skipAnimations) {
     if (currentSlideIndex < slideCount - 1 || options.wrapSlides) {
-        hideSlide(slides[currentSlideIndex]);
+        hideSlide(slides[currentSlideIndex], skipAnimations);
         incrementCurrentSlideIndex();
-        // tweakCurrentSlide(); // TODO
-        showSlide(slides[currentSlideIndex]);
+        tweakSlide(slides[currentSlideIndex]);
+        window.setTimeout(function() {
+            showSlide(slides[currentSlideIndex], skipAnimations);
+        }, (options.useAnimations && !skipAnimations) ? getRandomInt(1,500) : 0);
         updateFragment();
     }
 }
 
-function showSlide(slide) {
+function showSlide(slide, skipAnimations) {
     slide.classList.remove('off');
-    if (options.useAnimations) {
+    if (options.useAnimations && !skipAnimations) {
         let animClass = options.animations.randomise
-            ? options.animations.in[getRandomInt(options.animations.in.length)]
+            ? options.animations.in[getRandomInt(0, options.animations.in.length - 1)]
             : options.animations.fixedIn;
+
         slide.classList.add(animClass);
     }
 }
 
-function hideSlide(slide) {
-    slide.classList.remove('off');
-    if (options.useAnimations) {
+function hideSlide(slide, skipAnimations) {
+    if (options.useAnimations && !skipAnimations) {
+        let animClass = options.animations.randomise
+            ? options.animations.out[getRandomInt(0, options.animations.out.length - 1)]
+            : options.animations.fixedOut;
 
         slide.appendChild(hands[0]);
         hands[0].classList.add('move-in');
+        if (options.animations.rightHand.indexOf(animClass) >= 0) {
+            hands[0].classList.add('right-hand');
+        }
 
-        let animClass = options.animations.randomise
-            ? options.animations.out[getRandomInt(options.animations.out.length)]
-            : options.animations.fixedOut;
         slide.classList.add(animClass);
+    } else {
+        slide.classList.add('off');        
     }
+}
+
+function tweakSlide(slide) {
+    let rotation = getRandomFloat(-2, 2);
+    slide.getElementsByClassName('page_wrapper')[0].style.transform = `rotate(${rotation}deg)`;
+
+    for (var i = 0; i < slide.classList.length; i++) { 
+        if (slide.classList[i].startsWith('variant')) {
+            slide.classList.remove(slide.classList[i]); 
+        }
+    }
+
+    let variant = options.tweaks.variants[getRandomInt(0, options.tweaks.variants.length - 1)];
+    slide.classList.add(variant);
 }
 
 function incrementCurrentSlideIndex() {
@@ -111,10 +143,10 @@ function action() {
 document.addEventListener('keyup', function (event) {
     switch (event.key) {
         case 'ArrowLeft':
-            goToPreviousSlide();
+            goToPreviousSlide(event.ctrlKey);
             break;
         case 'ArrowRight':
-            goToNextSlide();
+            goToNextSlide(event.ctrlKey);
             break;
         case 'ArrowUp':
             break;
@@ -124,15 +156,18 @@ document.addEventListener('keyup', function (event) {
             action();
             break;
     }
+    console.log(event);
 });
 
 document.addEventListener('animationend', (e) => {
     if (e.animationName.startsWith('out')) {
         e.target.classList.add('off');
         e.target.classList.remove(e.animationName);
+
         let hand = e.target.getElementsByClassName('hand')[0];
         if(hand) {
             hand.classList.remove('move-in');
+            hand.classList.remove('right-hand');
         }
     }
     if (e.animationName.startsWith('in')) {
@@ -141,6 +176,19 @@ document.addEventListener('animationend', (e) => {
     }
 });
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+function getRandomBool() {
+    return Math.random() > 0.5;
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomFloat(minValue, maxValue, precision) {
+    if (typeof (precision) == 'undefined') {
+        precision = 2;
+    }
+    return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)), maxValue).toFixed(precision));
 }

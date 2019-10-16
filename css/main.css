@@ -4,10 +4,12 @@
 @import url("pages.css");
 
 :root {
-    --anaglyph-size: 2px;
     --header-font-size: 6.6vw;
     --header-line-height: 82%;
     --header-font-weight: 500;
+    --color-off-white: rgb(253, 248, 240);
+    --primary-font-family: 'Mitr';
+    --secindary-font-family: 'Catalogue';
     --header-font-family: 'Mitr';
     /* --header-font-family: 'Open Sans'; */
     /* --header-font-family: 'Sansita'; */
