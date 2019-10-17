@@ -248,3 +248,7 @@ body {
   background: var(--color-off-white, white);
   padding: 5vh;
 }
+
+.compressed_ps p {
+  margin: 0;
+}
