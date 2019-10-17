@@ -21,6 +21,7 @@ body {
   background-color: black;
   font-size: 2.2vw;
   font-family: var(--primary-font-family, 'arial');
+  overflow: hidden;
 }
 
 .wall {
@@ -246,4 +247,8 @@ body {
   color: #050505; 
   background: var(--color-off-white, white);
   padding: 5vh;
+}
+
+.compressed_ps p {
+  margin: 0;
 }

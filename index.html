@@ -47,7 +47,7 @@
 
         </div></div>
 
-        <div class="page content_in_the_middle" id="hof_definition"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        <!-- <div class="page content_in_the_middle" id="hof_definition"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
 
             <p class="clipping" style="font-size: 127%; width: 70%; transform: rotate(-2deg); margin: auto auto;">
                 <strong>Funkcja wyższego rzędu</strong> (higher-order function) 
@@ -56,12 +56,22 @@
                 <br /> funkcję (albo jedno i drugie)
             </p>
 
+        </div></div> -->
+
+        <div class="page content_in_the_middle" id="hof_definition2"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <p class="clipping" style="font-size: 127%; width: 70%; transform: rotate(-2deg); margin: auto auto;">
+                A <strong style="text-decoration: underline;">higher order function</strong> is a function that takes 
+                <br /> a function as an at leas one of its arguments,
+                <br /> or returns a function (or both)
+            </p>
+
         </div></div>
 
-        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        <div class="page content_in_the_middle" id="hof_php_examples_title"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
         
                 <div class="title_container">
-                    <h1 class="title text-centered">Przykłady <br /> w PHP</h1>
+                    <h1 class="title text-centered">Examples <br /> <span class="line2">in PHP</span></h1>
                 </div>
 
         </div></div>
@@ -100,7 +110,7 @@ $addFive = function($value) {
         <div class="page content_in_the_middle" id="hof_laravel_examples_title"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
         
                 <div class="title_container">
-                    <h1 class="title text-centered">Przykłady <br /><span class="line2">w Laravelu</span></h1>
+                    <h1 class="title text-centered">Examples <br /><span class="line2">in Laravel</span></h1>
                 </div>
 
         </div></div>
@@ -108,7 +118,7 @@ $addFive = function($value) {
         <div class="page content_in_the_middle" id="hof_laravel_examples"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
         
                 <div class="generic_container">
-                    <h1>Operacje na kolekcjach</h1>
+                    <h1>Collection methods</h1>
                     <div class="split">
                         <ul>
                             <li>contains</li>
@@ -249,6 +259,270 @@ Account::all()
                     <h1 class="title text-centered">PsySH</h1>
                 </div>
 
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1 class="title text-centered">Tinker</h1>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Other projects using PsySH</h1>
+                    <div class="split">
+                        <ul>
+                            <li>CakePHP</li>
+                            <li>CodeIgniter</li>
+                            <li>Drupal</li>
+                            <li>Magento</li>
+                            <li>MediaWiki</li>
+                        </ul>
+                        <ul>
+                            <li>Phalcon</li>
+                            <li>Symfony</li>
+                            <li>WordPress</li>
+                            <li>Yii 2</li>
+                            <li>Zend Framework</li>
+                        </ul>
+                    </div>
+                    <p class="threedots">...</p>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="tink_doc"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Documentation</h1>
+                    <div class="split">
+                        <div>
+                            <p><strong>doc</strong>
+                                <br /> - doc substr
+                                <br /> - doc tap
+                            </p>
+                            <p><strong>ls</strong>
+                                <br /> - ls
+                                <br /> - ls -kG Request
+                                <br /> - ls -p $response
+                                <br /> - ls -pa $response
+                            </p>
+                        </div>
+                        <div style="padding-left: 2vw;">
+                            <p><strong>show</strong>
+                                <br /> - show tap
+                                <br /> - show $response
+                            </p>
+                            <p><strong>wtf</strong>
+                                <br /> - wtf
+                                <br /> - wtf ?
+                                <br /> - wtf ??!!?
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Shell integration</h1>
+                    <p style="text-align: center;">`ls -la`</p>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+        
+                <div class="generic_container">
+                    <h1>Command history</h1>
+                    <ul>
+                        <li><span style="font-weight: 200;">hist</span> - show histor</li>
+                        <li><span style="font-weight: 200;">hist --show 3</span> - show entry</li>
+                        <li><span style="font-weight: 200;">hist --show 1..3</span> - show many entries</li>
+                        <li><span style="font-weight: 200;">hist --head 3</span> - show many entries</li>
+                        <li><span style="font-weight: 200;">hist --tail 3</span> - show many entries</li>
+                        <li><span style="font-weight: 200;">hist --grep wtf</span> - search with regexp (-i case-insensitive -v inverse)</li>
+                        <li><span style="font-weight: 200;">hist --head 3 --replay</span> - history replay</li>
+                        <li><span style="font-weight: 200;">hist --head 3 --save history.txt</span> - save historii to file</li>
+                        <li><span style="font-weight: 200;">hist --clear</span> - clear history</li>
+                    </ul>
+                </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="title_container">
+                <h1 class="title text-centered">eval(\Psy\sh());</h1>
+            </div>
+        
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h1>Configuration</h1>
+                    <p>per project / globalna</p>
+                    <p>commands, includes, casters</p>
+                </div>
+        
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+                <div class="title_container">
+                    <h2 class="">More info:</h2>
+                    <p style="text-decoration: underline;">github.com/bobthecow/psysh</p>
+                </div>
+        
+        </div></div>
+        
+
+
+
+
+        <!-- 
+            #########################################################################
+                VARIABLE FONTS
+         -->
+         <div class="page content_in_the_middle"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="title_container">
+                <h1 class="title text-centered">~~~</h1>
+            </div>
+
+        </div></div>
+
+
+
+
+        <div class="page content_in_the_middle" id=""> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="generic_container">
+                <img src="img/variable_fonts.png" />
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="title_container">
+                <h1 class="title text-centered">Variable Fonts</h1>
+            </div>
+        
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="title_container">
+                <h1 class="">01.</h1>
+                <div class="compressed_ps" style="position: relative; left: 20vw; top: -9.5vw;">
+                    <p style="font-family: 'Dosis'; font-weight: normal">font-weight: normal</p>
+                    <p style="font-family: 'Dosis'; font-weight: bold">font-weight: bold</p>
+                </div>
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="fonts_step_02"><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="title_container">
+                <h1 class="">02.</h1>
+                <div class="compressed_ps" style="position: relative; left: 20vw; top: -9.5vw;">
+                    <p style="font-family: 'Dosis'; font-weight: 100">font-weight: 100</p>
+                    <p style="font-family: 'Dosis'; font-weight: 200">font-weight: 200</p>
+                    <p style="font-family: 'Dosis'; font-weight: 300">font-weight: 300</p>
+                    <p style="font-family: 'Dosis'; font-weight: 400">font-weight: 400</p>
+                    <p style="font-family: 'Dosis'; font-weight: 500">font-weight: 500</p>
+                    <p style="font-family: 'Dosis'; font-weight: 600">font-weight: 600</p>
+                    <p style="font-family: 'Dosis'; font-weight: 700">font-weight: 700</p>
+                    <p style="font-family: 'Dosis'; font-weight: 800">font-weight: 800</p>
+                    <p style="font-family: 'Dosis'; font-weight: 900">font-weight: 900</p>
+                </div>
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="title_container">
+                <h1 class="">03.</h1>
+                <div class="compressed_ps" style="position: relative; left: 20vw; top: -11.0vw;">
+                    <p id="font-demo" style="font-family: 'Dosis'; font-size: 6vw; font-weight: 200">font-weight: ?</p>
+                </div>
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="generic_container">
+                <img src="img/variable_fonts.png" />
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="code_container">
+                <pre>
+
+.someclass {
+    font-variation-settings: "wght" 457, "wdth" 80;
+}
+
+.someclass {
+    font-weight: 457;
+    font-variation-settings: "wdth" 80;
+}
+
+</pre>
+                
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id=""><div class="page_wrapper"><div class="overlay page-pre-1"></div><div class="overlay page-pre-2"></div>
+        
+            <div class="generic_container">
+                <h1 class="">Browser support?</h1>
+            </div>
+
+        </div></div>
+
+
+
+
+
+        <!-- 
+            #########################################################################
+                BONUS
+         -->
+         <div class="page content_in_the_middle"> <div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+            <div class="title_container">
+                <h1 class="title text-centered">~~~</h1>
+            </div>
+
+        </div></div>
+
+        <div class="page content_in_the_middle" id="page_05"><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
+
+                <!-- <div class="title_container">
+                    <h1 class="title">Bonus: Dogfooding</h1>
+                    <ul>
+                        <li>css variables</li>
+                        <li>variable fonts</li>
+                        <li>tinker</li>
+                    </ul>
+                </div> -->
         </div></div>
 
         <div class="page content_in_the_middle" id=""><div class="page_wrapper"> <div class="overlay page-pre-1"></div> <div class="overlay page-pre-2"></div>
