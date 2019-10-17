@@ -128,6 +128,11 @@ function getCurrentSlideIndex() {
     }
 }
 
+function changeBrightness(diff) {
+    options.tweaks.contrast = options.tweaks.contrast + diff;
+    document.documentElement.style.setProperty('--contrast', options.tweaks.contrast);
+}
+
 function updateFragment() {
     window.location.hash = currentSlideIndex;
 }
@@ -149,8 +154,10 @@ document.addEventListener('keyup', function (event) {
             goToNextSlide(event.ctrlKey);
             break;
         case 'ArrowUp':
+            changeBrightness(1);
             break;
         case 'ArrowDown':
+            changeBrightness(-1);
             break;
         case ' ':
             action();
